@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Данил Лысенко — Python-разработчик</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+    <div class="container nav-inner">
+        <a href="#" class="nav-logo">DL</a>
+        <div class="nav-links">
+            <a href="#about">Обо мне</a>
+            <a href="#stack">Стек</a>
+            <a href="#projects">Проекты</a>
+            <a href="#contacts" class="btn btn-nav">Связаться</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-status">Open to work</div>
+        <h1>Данил Лысенко</h1>
+        <p class="hero-role">Python-разработчик &middot; Боты &middot; AI &middot; Автоматизация</p>
+        <p class="hero-desc">Telegram-боты, FastAPI-сервисы, интеграции с маркетплейсами, AI-аналитика.<br>Python + aiogram + Playwright + Claude AI. 7 публичных проектов на GitHub, 90+ тестов.</p>
+        <div class="hero-actions">
+            <a href="https://t.me/Daniel_Lysenko33" class="btn btn-primary" target="_blank" rel="noopener">Написать в Telegram</a>
+            <a href="#projects" class="btn btn-ghost">Проекты</a>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <div class="container">
+        <h2>Обо мне</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>21 год, Армавир. Пишу на Python: Telegram-боты, REST API, парсеры, AI-интеграции. Работаю с WB/Ozon API, Playwright, Claude AI. Код покрыт тестами, проекты задеплоены и работают.</p>
+                <p>Учусь в Московском финансовом университете «Синергия» (Искусственный интеллект и большие данные). Ищу позицию Python-разработчика от 150K, готов к удалёнке.</p>
+            </div>
+            <div class="about-facts">
+                <div class="fact">
+                    <span class="fact-num">7</span>
+                    <span class="fact-label">публичных проектов на GitHub</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-num">90+</span>
+                    <span class="fact-label">unit-тестов (pytest)</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-num">5</span>
+                    <span class="fact-label">Telegram-ботов в production</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stack -->
+<section class="stack" id="stack">
+    <div class="container">
+        <h2>Технологии</h2>
+        <div class="stack-groups">
+            <div class="stack-group">
+                <h3>Backend & Боты</h3>
+                <div class="stack-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">aiogram 3</span>
+                    <span class="tag">asyncio</span>
+                    <span class="tag">pydantic</span>
+                </div>
+            </div>
+            <div class="stack-group">
+                <h3>Маркетплейсы & API</h3>
+                <div class="stack-tags">
+                    <span class="tag">WB API</span>
+                    <span class="tag">Ozon API</span>
+                    <span class="tag">REST API</span>
+                    <span class="tag">httpx</span>
+                </div>
+            </div>
+            <div class="stack-group">
+                <h3>AI & Парсинг</h3>
+                <div class="stack-tags">
+                    <span class="tag">Claude AI</span>
+                    <span class="tag">Playwright</span>
+                    <span class="tag">NLP</span>
+                    <span class="tag">browser-use</span>
+                </div>
+            </div>
+            <div class="stack-group">
+                <h3>Data & Infra</h3>
+                <div class="stack-tags">
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">SQLite</span>
+                    <span class="tag">SQLAlchemy</span>
+                    <span class="tag">pytest</span>
+                    <span class="tag">Git</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="projects" id="projects">
+    <div class="container">
+        <h2>Проекты</h2>
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-num">01</div>
+                <h3>WB SEO Auditor</h3>
+                <p class="project-desc">Telegram-бот для SEO-аудита карточек Wildberries. Парсит карточку по артикулу через Playwright, анализирует через Claude AI: заголовок, описание, характеристики, фото, отзывы. Выдаёт оценку и рекомендации.</p>
+                <ul class="project-highlights">
+                    <li>Парсинг карточки WB через Playwright</li>
+                    <li>AI-анализ SEO: заголовок, описание, фото</li>
+                    <li>45 unit-тестов (pytest)</li>
+                    <li>Rate limiting, антибан, retry-логика</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Python</span>
+                    <span>aiogram 3</span>
+                    <span>Playwright</span>
+                    <span>Claude AI</span>
+                </div>
+                <a href="https://github.com/dlysenko-dev/plamya-core" class="project-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-num">02</div>
+                <h3>Max Bots Hub</h3>
+                <p class="project-desc">SaaS-платформа для создания ботов в мессенджере MAX. Мультитенант-архитектура, конструктор сценариев, REST API, JWT-авторизация. Два шаблона ботов из коробки.</p>
+                <ul class="project-highlights">
+                    <li>FastAPI + мультитенант-архитектура</li>
+                    <li>JWT-авторизация, Telegram OAuth</li>
+                    <li>Конструктор сценариев с шаблонами</li>
+                    <li>Webhook-менеджмент для ботов</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>SQLAlchemy</span>
+                    <span>JWT</span>
+                </div>
+                <a href="https://github.com/dlysenko-dev/max-bots-hub" class="project-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-num">03</div>
+                <h3>AI Psychologist</h3>
+                <p class="project-desc">Telegram Mini App — AI-психолог с кризисным детектором. KMSI-R тестирование денежных установок, JWT-авторизация через Telegram WebApp, PostgreSQL для истории сессий.</p>
+                <ul class="project-highlights">
+                    <li>Кризисный детектор (RU/EN, 20+ паттернов)</li>
+                    <li>KMSI-R тест: 4 шкалы денежных установок</li>
+                    <li>46 unit-тестов (pytest)</li>
+                    <li>Telegram WebApp авторизация (HMAC)</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>PostgreSQL</span>
+                    <span>Claude AI</span>
+                </div>
+                <a href="https://github.com/dlysenko-dev/ai-psychologist" class="project-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-num">04</div>
+                <h3>Voice Dictation</h3>
+                <p class="project-desc">Десктопное приложение для голосовой диктовки. Whisper для распознавания речи, системный трей, горячие клавиши. Вставляет текст в любое активное окно.</p>
+                <ul class="project-highlights">
+                    <li>Whisper — распознавание речи</li>
+                    <li>Системный трей + горячие клавиши</li>
+                    <li>Автовставка в активное окно</li>
+                    <li>Поддержка русского и английского</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Python</span>
+                    <span>Whisper</span>
+                    <span>PyQt</span>
+                    <span>pynput</span>
+                </div>
+                <a href="https://github.com/dlysenko-dev/voice-dictation" class="project-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-num">05</div>
+                <h3>PLAMYA Core</h3>
+                <p class="project-desc">Монорепо с инфраструктурой: shared-библиотека (AI-клиент, memory, security), biz_scanner для лидогенерации, деплой-скрипты. Общая кодовая база для всех проектов.</p>
+                <ul class="project-highlights">
+                    <li>Shared-библиотека: AI, browser, memory</li>
+                    <li>4-слойная защита от prompt injection</li>
+                    <li>Biz Scanner: парсинг + AI-квалификация лидов</li>
+                    <li>1800+ бизнесов в базе</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Python</span>
+                    <span>Playwright</span>
+                    <span>SQLite</span>
+                    <span>Claude AI</span>
+                </div>
+                <a href="https://github.com/dlysenko-dev/plamya-core" class="project-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contacts -->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <h2>Контакты</h2>
+        <p class="contacts-text">Открыт к предложениям. Отвечаю в течение нескольких часов.</p>
+        <div class="contacts-grid">
+            <a href="https://t.me/Daniel_Lysenko33" class="contact-card" target="_blank" rel="noopener">
+                <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="currentColor"/></svg>
+                </div>
+                <span class="contact-label">Telegram</span>
+                <span class="contact-value">@Daniel_Lysenko33</span>
+            </a>
+            <a href="https://github.com/dlysenko-dev" class="contact-card" target="_blank" rel="noopener">
+                <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill="currentColor"/></svg>
+                </div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">dlysenko-dev</span>
+            </a>
+            <a href="mailto:1evgeniyonegin1@gmail.com" class="contact-card">
+                <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg>
+                </div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">1evgeniyonegin1@gmail.com</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Данил Лысенко</p>
+    </div>
+</footer>
+
+<script>
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+// Navbar background on scroll
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Reveal animations
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.project-card, .stack-group, .contact-card, .fact').forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>
