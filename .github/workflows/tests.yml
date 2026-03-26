@@ -10,7 +10,7 @@ jobs:
           python-version: "3.11"
       - name: Install dependencies
         run: |
-          pip install pytest
+          pip install pytest aiohttp
           pip install -r requirements.txt || true
       - name: Run tests
         env:
